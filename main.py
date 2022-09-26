@@ -1,7 +1,6 @@
 from fastapi import FastAPI, Depends
-from models import Base
-from database import engine, SessionLocal, get_db
-from routers import category
+from database import engine, Base
+from routers import category, report
 
 import uvicorn
 
@@ -15,7 +14,8 @@ def hello():
     return {"message": "API Running"}
 
 # Router Include
-app.include_router(category.router)
+app.include_router(category.router, tags=['Category'])
+app.include_router(report.router, tags=['Report'])
 
 # Executable
 if __name__ == "__main__":
