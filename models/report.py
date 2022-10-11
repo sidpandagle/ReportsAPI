@@ -4,7 +4,7 @@ from database import Base
 class Report(Base):
     __tablename__ = 'Report'
     id = Column(Integer, primary_key=True, index=True)
-    title = Column(String)
+    title = Column(String(60))
     category_id = Column(Integer)
     price = Column(Integer)
-    description = Column(String)
+    description = Column(String(600))

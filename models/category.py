@@ -4,4 +4,4 @@ from database import Base
 class Category(Base):
     __tablename__ = 'Category'
     id = Column(Integer, primary_key=True, index=True)
-    title = Column(String)
+    title = Column(String(60))
