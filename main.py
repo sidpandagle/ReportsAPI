@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends
 from database import engine, Base
 from routers import category, report
-
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 app = FastAPI()
