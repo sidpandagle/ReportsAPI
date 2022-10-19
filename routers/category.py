@@ -1,5 +1,5 @@
 from fastapi import Depends, status, HTTPException, APIRouter
-from models.category import  Category as CategoryModel 
+from models import  Category as CategoryModel 
 from schemas import category as  CategorySchema
 from database import get_db
 from sqlalchemy.orm import Session

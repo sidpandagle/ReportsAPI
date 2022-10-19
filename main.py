@@ -8,6 +8,7 @@ app = FastAPI()
 
 
 origins = [
+    "https://vast-lake-18728.herokuapp.com",
     "http://localhost.tiangolo.com",
     "https://localhost.tiangolo.com",
     "http://localhost",

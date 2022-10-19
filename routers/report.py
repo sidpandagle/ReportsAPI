@@ -1,5 +1,5 @@
 from fastapi import Depends, status, HTTPException, APIRouter
-from models.report import  Report as ReportModel 
+from models import  Report as ReportModel 
 from schemas import report as ReportSchema
 from database import get_db
 from sqlalchemy.orm import Session
