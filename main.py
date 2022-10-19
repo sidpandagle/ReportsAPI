@@ -8,12 +8,12 @@ app = FastAPI()
 
 
 origins = [
-    "https://vast-lake-18728.herokuapp.com/",
-    "http://localhost.tiangolo.com/",
-    "https://localhost.tiangolo.com/",
-    "http://localhost/",
-    "http://localhost:4200/",
-    "http://localhost:8080/",
+    "https://vast-lake-18728.herokuapp.com",
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://localhost:4200",
+    "http://localhost:8080"
 ]
 
 app.add_middleware(
