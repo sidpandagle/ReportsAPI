@@ -14,3 +14,12 @@ class Report(Base):
     # category = Column(String(60))
     # price = Column(Integer)
     description = Column(String())
+
+class ReportSample(Base):
+    __tablename__ = 'ReportSample'
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String(60))
+    email = Column(String(50))
+    country = Column(String(30))
+    phone = Column(String(20))
+    company_name = Column(String(60))

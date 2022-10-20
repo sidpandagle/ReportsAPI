@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends
 from database import engine, Base
-from routers import category, report
+from routers import category, report, reportsample
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
@@ -36,6 +36,7 @@ def hello():
 # Router Include
 app.include_router(category.router, tags=['Category'])
 app.include_router(report.router, tags=['Report'])
+app.include_router(reportsample.router, tags=['ReportSample'])
 
 # Executable
 if __name__ == "__main__":
