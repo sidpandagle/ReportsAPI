@@ -3,10 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./report.db"
-# SQLALCHEMY_DATABASE_URL = "mysql://sql6525176:3EpTvUelTQ@sql6.freesqldatabase.com:3306/sql6525176"
 
 engine = create_engine(
-    # SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
     SQLALCHEMY_DATABASE_URL
 )
 
